@@ -25,3 +25,19 @@ myopenai
 可以在引入的包里，new一个对象
 
 
+函数，或者方法，作为一个独立的块单位，
+也就是首先是函数是如何组织的，然后函数内部是做什么
+里面的东西，每一条语句都是，清晰明确的东西，以下是一些清晰的东西，其他可以列为未覆盖的函数里面的操作
+一个是需要什么样的参数
+其实里面可以有任何全局的东西，比如requests.post()，比如
+messages = []
+    messages.append({"role":"system","content":"我希望你充当文案专员、文本润色员、拼写纠正员和改进员"})
+这些语句肯定是做一些事情，比如requests.post()完成了一个操作
+messages.append是数组结构自身增加了数据
+另外一些是调用了函数然后return了数据，赋值给了一个变量
+response2 = openai.chat.completions.create()
+为什么会有多重的openai.chat.completions.create()
+
+
+
+
